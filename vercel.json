@@ -1,0 +1,47 @@
+{
+    "functions": {
+      "api/fetch_followers.py": {
+        "memory": 256,
+        "maxDuration": 30
+      },
+      "api/fetch_tweets.py": {
+        "memory": 256,
+        "maxDuration": 30
+      },
+      "api/process_sentiment.py": {
+        "memory": 256,
+        "maxDuration": 30
+      },
+      "api/calculate_trends.py": {
+        "memory": 256,
+        "maxDuration": 30
+      },
+      "api/post_narrative.py": {
+        "memory": 256,
+        "maxDuration": 30
+      }
+    },
+    "crons": [
+      {
+        "path": "/api/fetch_followers",
+        "schedule": "0 */6 * * *"  
+      },
+      {
+        "path": "/api/fetch_tweets",
+        "schedule": "*/30 * * * *"  
+      },
+      {
+        "path": "/api/process_sentiment",
+        "schedule": "0 * * * *" 
+      },
+      {
+        "path": "/api/calculate_trends",
+        "schedule": "15 * * * *"  
+      },
+      {
+        "path": "/api/post_narrative",
+        "schedule": "30 * * * *" 
+      }
+    ]
+  }
+  

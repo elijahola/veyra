@@ -1,0 +1,7 @@
+tweepy
+pymongo
+vaderSentiment
+telethon
+python-dotenv
+apscheduler
+openai
